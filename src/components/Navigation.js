@@ -35,6 +35,9 @@ function Navigation() {
                     <MDBNavLink className='text-dark' to="#">About</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
+                  <MDBNavLink className='text-dark' to="#">Consultation</MDBNavLink>
+                </MDBNavItem>
+                  <MDBNavItem>
                     <MDBNavLink className='text-dark' to="#">Gallery</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>

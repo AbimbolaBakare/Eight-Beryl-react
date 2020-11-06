@@ -19,13 +19,13 @@ body{
     background-color: transparent;
   }
   *::-webkit-scrollbar-thumb {
-    background-color:rgba(190, 187, 220, 0.7);
+    background-color:#f7c761;
     border-radius: 20px;
   }
   /* SCROLL BAR */
 
 #classicformpage{
-    background-image: url("./images/banner7.jpg");
+    background-image: url("./images/banner9.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -45,7 +45,7 @@ body{
   .space{
       letter-spacing: 12px ;
       font-weight: bolder ;
-      font-size: 20px;
+      font-size: 23px;
   }
   
   .serv{
@@ -96,3 +96,4 @@ button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
 .wedding-card{
   background-color: #FBFBFB !important;
 }
+

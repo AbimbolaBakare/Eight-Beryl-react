@@ -5,13 +5,13 @@ export default function BannerOne() {
     return (
         <>
             <div id='classicformpage'>
-            <MDBMask overlay="black-light" className="flex-center flex-column text-white text-center">
+            <MDBMask overlay="black-light" className="flex-center flex-column text-center">
               <MDBAnimation
                 type="rollIn"
                 delay=".3s"
-                className="white-text text-center space"
+                className=" text-center space"
               >
-                <h1 className="h1-responsive ">
+                <h1 className="h1-responsive text-warning font-weight-bold  ">
                   Creating
                    </h1>
               </MDBAnimation>
@@ -19,9 +19,9 @@ export default function BannerOne() {
               <MDBAnimation
                 type="fadeInRight"
                 delay=".3s"
-                className="white-text text-center space"
+                className="text-center space"
               >
-                <h1 className="h1-responsive">
+                <h1 className=" h1-responsive text-warning font-weight-bold ">
                   Unforgettable
                    </h1>
               </MDBAnimation>
@@ -29,9 +29,9 @@ export default function BannerOne() {
               <MDBAnimation
                 type="fadeInLeft"
                 delay=".3s"
-                className="white-text text-center space"
+                className="text-center space"
               >
-                <h1 className="h1-responsive">
+                <h1 className="h1-responsive text-warning font-weight-bold">
                   Memories
                    </h1>
               </MDBAnimation>
