@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { MDBContainer, MDBTabPane, MDBTabContent, MDBNav, MDBNavItem, MDBNavLink } from "mdbreact";
 import WeddingTab from "./WeddingTab";
+import PrivatePartyTab from "./PrivatePartyTab";
+import CorporateEventTab from "./CorporateEventTab";
 
   function TabsDefault (){
 
     const [activeItem, setActiveItem] = useState('1')
 
-    const toggle = tab => e => {
+    const toggle = tab => () => {
       if (activeItem !== tab) {
-       setActiveItem({
-          activeItem: tab
-        });
+       setActiveItem( tab );
+      
       }
     };
 
@@ -39,29 +40,10 @@ import WeddingTab from "./WeddingTab";
             <WeddingTab/>
           </MDBTabPane>
           <MDBTabPane tabId="2" role="tabpanel">
-            <p className="mt-2">
-              Quisquam aperiam, pariatur. Tempora, placeat ratione porro
-              voluptate odit minima. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Nihil odit magnam minima,
-              soluta doloribus reiciendis molestiae placeat unde eos
-              molestias.
-            </p>
-            <p>
-              Quisquam aperiam, pariatur. Tempora, placeat ratione porro
-              voluptate odit minima. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Nihil odit magnam minima,
-              soluta doloribus reiciendis molestiae placeat unde eos
-              molestias.
-            </p>
+           <PrivatePartyTab/>
           </MDBTabPane>
           <MDBTabPane tabId="3" role="tabpanel">
-            <p className="mt-2">
-              Quisquam aperiam, pariatur. Tempora, placeat ratione porro
-              voluptate odit minima. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Nihil odit magnam minima,
-              soluta doloribus reiciendis molestiae placeat unde eos
-              molestias.
-            </p>
+            <CorporateEventTab/>
           </MDBTabPane>
         </MDBTabContent>
       </MDBContainer>

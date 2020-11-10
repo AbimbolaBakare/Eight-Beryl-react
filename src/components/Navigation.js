@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavbarToggler, MDBCollapse, MDBNavItem, MDBNavLink, MDBContainer} from 'mdbreact';
-import { BrowserRouter as Router } from 'react-router-dom';
+
 import logo from '../images/THE8THBERYL-RAW.jpg'
 
 function Navigation() {
@@ -15,7 +15,6 @@ function Navigation() {
 
     return (
       <div>
-        <Router>
           <MDBNavbar color="white" expand="md" scrolling fixed='top' >
             <MDBContainer className='my-3'>
               <MDBNavbarBrand href="/">
@@ -26,30 +25,32 @@ function Navigation() {
               <MDBCollapse isOpen={collapse} navbar>
                 <MDBNavbarNav right>
                   <MDBNavItem active>
-                    <MDBNavLink className='text-dark' to="#">Home</MDBNavLink>
+                    <MDBNavLink className='text-dark' to="/">Home</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink className='text-dark' to="#">Services</MDBNavLink>
+                    <MDBNavLink className='text-dark' to="/services">Services</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink className='text-dark' to="#">About</MDBNavLink>
+                    <MDBNavLink className='text-dark' to="/about">About</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                  <MDBNavLink className='text-dark' to="#">Consultation</MDBNavLink>
+                  <MDBNavLink className='text-dark' to="/consultation">Consultation</MDBNavLink>
                 </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink className='text-dark' to="#">Gallery</MDBNavLink>
+                    <MDBNavLink className='text-dark' to="/gallery">Gallery</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                    <MDBNavLink className='text-dark' to="#">Contact</MDBNavLink>
+                    <MDBNavLink className='text-dark' to="/contact">Contact</MDBNavLink>
                   </MDBNavItem>
+
+                  <MDBNavItem>
+                 
+                  </MDBNavItem>
+                  
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBContainer>
           </MDBNavbar>
-
-        </Router>
-        
       </div>
     );
   };

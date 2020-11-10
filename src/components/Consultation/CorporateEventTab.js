@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBAnimation } from "mdbreact";
 import ModalPage from '../../components/Modal'
 import look1 from '../../images/THE8THBERYL-RAW.jpg';
@@ -6,43 +6,43 @@ import look2 from '../../images/banner10.jpg';
 import look3 from '../../images/wedding2.jpg';
 import look4 from '../../images/banner2(1).jpg';
 
+export default function CorporateEventTab() {
 
-export default function WeddingTab() {
     const [showModal, setShowModal] = useState(false);
     const [index, setIndex] = useState('');
 
     const openModal = tab => () => {
         setShowModal(true)
         if (index !== tab) {
-         setIndex( tab );
+            setIndex(tab);
         }
-      };
+    };
 
-   
     let title;
     let info;
     let image;
     switch (index) {
-    case '1':
-         title = "Full Package";
-         info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- full package';
-         image = look4;
-        break;
-    case '2':
-        title = "On The Day Coordination";
-        info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- on the day package';
-        image = look2;
-        break;
-    case '3':
-        title = "Partial Package";
-        info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- partial package';
-        image = look3;
-        break;
-    default:
-        title = "Wedding";
-        info = 'Wedding package';
-        image = look1;  
+        case '1':
+            title = "Employee fun days";
+            info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- employee fun days';
+            image = look4;
+            break;
+        case '2':
+            title = "Corporate parties";
+            info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- corporate parties';
+            image = look2;
+            break;
+        case '3':
+            title = "Conferences";
+            info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- conferences';
+            image = look3;
+            break;
+        default:
+            title = "Corporate events";
+            info = 'Corporate package';
+            image = look1;
     }
+
 
     return (
         <div>
@@ -64,7 +64,7 @@ export default function WeddingTab() {
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Full Package</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Employee fun days</h4>
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'></MDBCol>
@@ -75,11 +75,14 @@ export default function WeddingTab() {
                         </MDBCol>
 
                         <MDBCol md="4" className='mx-auto text-center'>
-                            <MDBBtn color='amber' className='w-50 font-weight-bold' onClick={openModal("1")} >BOOK NOW</MDBBtn>
+                            <MDBBtn color='amber' className='w-50 font-weight-bold' onClick={openModal("1")}>BOOK NOW</MDBBtn>
                         </MDBCol>
                     </MDBRow>
                 </MDBAnimation>
+
             </MDBContainer>
+
+
 
             <MDBContainer>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
@@ -100,7 +103,7 @@ export default function WeddingTab() {
                         </MDBCol>
 
                         <MDBCol md="3" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>On the day Coordination</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Corporate Parties</h4>
                         </MDBCol>
 
                         <MDBCol md="1" className='mx-auto text-center'></MDBCol>
@@ -138,7 +141,7 @@ export default function WeddingTab() {
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Partial Package</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Conferences</h4>
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'></MDBCol>
@@ -149,7 +152,7 @@ export default function WeddingTab() {
                         </MDBCol>
 
                         <MDBCol md="4" className='mx-auto text-center'>
-                            <MDBBtn color='amber' className='w-50 font-weight-bold' onClick={openModal("3")} >BOOK NOW</MDBBtn>
+                            <MDBBtn color='amber' className='w-50 font-weight-bold' onClick={openModal("3")}>BOOK NOW</MDBBtn>
                         </MDBCol>
                     </MDBRow>
                 </MDBAnimation>
@@ -160,7 +163,6 @@ export default function WeddingTab() {
                 info={info}
                 image={image}
             />
-
         </div>
     );
 }
