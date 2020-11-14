@@ -11,6 +11,9 @@ export default function Home(){
     return(
         <>
              <Navigation/>
+             <div className='heading-background'>
+                AN INDESCRIBABLE EXPERIENCE
+            </div>
             
              <BannerOne/>
             

@@ -15,6 +15,9 @@ export default function About() {
                 <Navigation />
             </div>
             {/* <LightToggle/> */}
+            <div className='heading-background'>
+                AN INDESCRIBABLE EXPERIENCE
+            </div>
 
             <Container className='text-center mt-5 pt-5'>
                 <h3 className='h1-responsive title sectionSpace'>ABOUT</h3>

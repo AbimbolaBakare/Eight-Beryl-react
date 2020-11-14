@@ -150,3 +150,77 @@ button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus  {
   background-color: #FBFBFB !important;
 }
 
+.navbar-toggler{
+  background-color: black !important;
+}
+
+.package-background-one {
+	animation: package-background-one 6s linear infinite alternate both;
+}
+
+@keyframes package-background-one {
+  0% {
+    background: #5F3F50;
+  }
+  33.3333% {  
+    background: #9E9771;
+  }
+  66.666% {  
+    background: #80C5E3;
+  }
+  100% {
+    background: #058337;
+  }
+}
+
+.package-background-two {
+	animation: package-background-two 6s linear infinite alternate both;
+}
+
+@keyframes package-background-two {
+  0% {
+    background: #058337;
+   
+  }
+  33.3333% {
+    background: #80C5E3;
+  }
+  66.666% {
+    background: #5F3F50;
+  }
+  100% {
+    background: #9E9771;  
+  }
+}
+
+.package-background-three {
+	animation: package-background-three 6s linear infinite alternate both;
+}
+
+@keyframes package-background-three {
+  0% {
+    background: #9E9771;
+   
+  }
+  33.3333% {
+    background: #058337;
+  }
+  66.666% {
+    background: #80C5E3;
+  }
+  100% {
+    background: #5F3F50;
+   
+  }
+}
+
+.heading-background{
+  position: fixed;
+  opacity: 0.1;
+  font-size: 13em;
+  left:-0.1em;
+  top:-0.5em;
+  z-index: -100;
+  color:#9352ae;
+ 
+}

@@ -12,7 +12,7 @@ export default function BannerOne() {
                 className=" text-center space"
               >
                 <h1 className="h1-responsive text-warning font-weight-bold  ">
-                  Creating
+                  An
                    </h1>
               </MDBAnimation>
 
@@ -22,7 +22,7 @@ export default function BannerOne() {
                 className="text-center space"
               >
                 <h1 className=" h1-responsive text-warning font-weight-bold ">
-                  Unforgettable
+                  Indescribable
                    </h1>
               </MDBAnimation>
 
@@ -32,7 +32,7 @@ export default function BannerOne() {
                 className="text-center space"
               >
                 <h1 className="h1-responsive text-warning font-weight-bold">
-                  Memories
+                  Exprience
                    </h1>
               </MDBAnimation>
 

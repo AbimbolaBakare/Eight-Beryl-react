@@ -26,7 +26,7 @@ import CorporateEventTab from "./CorporateEventTab";
           </MDBNavItem>
           <MDBNavItem>
             <MDBNavLink link to="#" active={activeItem === "2"} onClick={toggle("2")} role="tab" >
-              Private Parties
+            Social Events
             </MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>

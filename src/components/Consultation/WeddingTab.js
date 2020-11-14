@@ -46,7 +46,7 @@ export default function WeddingTab() {
 
     return (
         <div>
-            <MDBContainer>
+            <MDBContainer className='package-background-one'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -81,7 +81,7 @@ export default function WeddingTab() {
                 </MDBAnimation>
             </MDBContainer>
 
-            <MDBContainer>
+            <MDBContainer className='package-background-two'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -119,7 +119,7 @@ export default function WeddingTab() {
             </MDBContainer>
 
 
-            <MDBContainer>
+            <MDBContainer className='package-background-three'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal

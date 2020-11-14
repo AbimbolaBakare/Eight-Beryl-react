@@ -17,6 +17,10 @@ export default function Services() {
                 <h3 className='h3-responsive title sectionSpace'>SERVICES</h3>
             </Container>
 
+            <div className='heading-background'>
+                AN INDESCRIBABLE EXPERIENCE
+            </div>
+
             <Wedding/>
 
             <PrivateParties/>

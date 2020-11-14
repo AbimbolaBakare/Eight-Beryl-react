@@ -6,7 +6,7 @@ const PrivateParties = () => {
         <MDBContainer fluid className='divi'>
             <section className="text-center my-5">
                 <h2 className="h2-responsive font-weight-bold title sectionSpace my-5">
-                    PRIVATE PARTIES
+                    SOCIAL EVENTS
                 </h2>
                 {/* <p className="dark-grey-text w-responsive mx-auto mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
@@ -56,7 +56,7 @@ const PrivateParties = () => {
                                 />
 
                                 <MDBCardBody>
-                                    <h4 className="font-weight-bold mb-4 title">Bar Mitzvahs</h4>
+                                    <h4 className="font-weight-bold mb-4 title">Birthday</h4>
 
                                     <p className="dark-grey-text mt-3 title-small p-3">
 
@@ -83,7 +83,7 @@ const PrivateParties = () => {
                                 />
 
                                 <MDBCardBody>
-                                    <h4 className="font-weight-bold mb-4 title">Private Events</h4>
+                                    <h4 className="font-weight-bold mb-4 title">Bridal Shower</h4>
 
                                     <p className="dark-grey-text mt-3 title-small p-3">
 

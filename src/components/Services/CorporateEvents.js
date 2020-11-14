@@ -22,7 +22,7 @@ const CorporateEvents = () => {
                         >
                             <MDBCard border="white" className='wedding-card p-5'>
                                 <img
-                                   style={{ width: '160px', height: '160px'}}
+                                    style={{ width: '160px', height: '160px' }}
                                     src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
                                     alt=""
                                     className="rounded-circle mx-auto img-fluid m-3"
@@ -33,7 +33,7 @@ const CorporateEvents = () => {
                                     <p className="dark-grey-text mt-3 title-small p-3">
 
                                         I'm a paragraph. Click here to add your own text and edit me.
-                                        I’m a great place for you to tell a story and let your users know more.
+                                        I’m a great place for you to tell a story and let your users know more. Lorem Lorem lorem lorem lorem
                                 </p>
                                 </MDBCardBody>
                             </MDBCard>
@@ -49,14 +49,14 @@ const CorporateEvents = () => {
                             <MDBCard border="white" className='wedding-card p-5' >
 
                                 <img
-                                    style={{ width: '160px', height: '160px'}}
+                                    style={{ width: '160px', height: '160px' }}
                                     src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
                                     alt=""
                                     className="rounded-circle mx-auto img-fluid m-3"
                                 />
 
                                 <MDBCardBody>
-                                    <h4 className="font-weight-bold mb-4 title">Corporate Parties</h4>
+                                    <h4 className="font-weight-bold mb-4 title">Product/Company Launch</h4>
 
                                     <p className="dark-grey-text mt-3 title-small p-3">
 
@@ -76,14 +76,14 @@ const CorporateEvents = () => {
                         >
                             <MDBCard border="white" className='wedding-card p-5' >
                                 <img
-                                    style={{ width: '160px', height: '160px'}}
+                                    style={{ width: '160px', height: '160px' }}
                                     src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg"
                                     alt=""
                                     className="rounded-circle mx-auto img-fluid m-3"
                                 />
 
                                 <MDBCardBody>
-                                    <h4 className="font-weight-bold mb-4 title">Employee Fun Day</h4>
+                                    <h4 className="font-weight-bold mb-4 title">Employee Fun Day/End of the year parties</h4>
 
                                     <p className="dark-grey-text mt-3 title-small p-3">
 

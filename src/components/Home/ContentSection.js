@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBAnimation } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBAnimation, MDBNavLink } from "mdbreact";
 import image from '../../images/wedding2.jpg';
 import logo from '../../images/THE8THBERYL-RAWf.jpg'
 
@@ -27,7 +27,10 @@ export default function ContentSection() {
                                 </div>
 
                                 <div className="text-center mt-5 mb-5 ">
-                                    <MDBBtn outline color="dark" className='w-100'>DISCOVER</MDBBtn>
+                                    <MDBNavLink className='text-dark' to="/services">
+                                        <MDBBtn outline color="dark" className='w-100'>DISCOVER</MDBBtn>
+                                    </MDBNavLink>
+
                                 </div>
                             </div>
                         </MDBAnimation>
@@ -40,7 +43,7 @@ export default function ContentSection() {
                             type="fadeInRight"
                             delay=".3s"
                         >
-                            <div className='h-100'>
+                            <div className='h-100 m-5'>
                                 <img className="img-fluid" src={image} alt='services' />
                             </div>
                         </MDBAnimation>

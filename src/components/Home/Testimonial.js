@@ -1,42 +1,51 @@
 import React from "react";
-import { MDBContainer } from
-  "mdbreact";
-import Carousel, { consts } from 'react-elastic-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import look1 from '../../images/THE8THBERYL-RAW.jpg';
+import "../../css/carousel.css"
 
-const Testimonial = () => {
-
-  function myArrow({ type, onClick, isEdge }) {
-    const pointer = type === consts.PREV ? '👈' : '👉'
-    return (
-      <div style={{ cursor: 'pointer' }} className='mt-5' onClick={onClick} disabled={isEdge}>{pointer}</div>
-    )
-  }
-
+export default function Testimonial() {
   return (
-    <MDBContainer className='mb-5 p-5'>
-      <Carousel enableAutoPlay autoPlaySpeed='3000' renderArrow={myArrow} itemsToShow={1} easing="cubic-bezier(1,.15,.55,1.54)"
-        tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
-        transitionMs={700}>
-        <div className='text-center'>
-          <h4 className='h3-responsive p-5 '>
-          I'm a testimonial. <br/>Click to edit me and add text that says something <br/> nice about you and your services.
-          </h4>
+    <Carousel
+      showArrows={true}
+      infiniteLoop={true}
+      showThumbs={false}
+      showStatus={false}
+      autoPlay={true}
+      interval={6000}
+    >
+      <div className='m-5'>
+        <img src={look1} className='img-fluid' alt='testimonial' />
+        <div className="myCarousel">
+          <h3>Mr. Segun</h3>
+          <h4>Lagos</h4>
+          <p>
+            8th Beryl planned my son's first birthday party and they performed beyond expectation. I highly recommend
+            </p>
         </div>
-        <div className='text-center'>
-        <h4 className='h3-responsive p-5 '>
-          I'm a testimonial. <br/>Click to edit me and add text that says something <br/> nice about you and your services.
-          </h4>
-        </div>
-        <div className='text-center'>
-        <h4 className='h3-responsive p-5 '>
-          I'm a testimonial. <br/>Click to edit me and add text that says something <br/> nice about you and your services.
-          </h4>
-          
-        </div>
+      </div>
 
-      </Carousel>
-    </MDBContainer>
+      <div>
+        <img src={look1} alt='testimonial'/>
+        <div className="myCarousel">
+          <h3>Kiki </h3>
+          <h4>London</h4>
+          <p>
+            My wedding was perfect, tho I wasn't around during the planning time. All thanks to 8th Beryl
+            </p>
+        </div>
+      </div>
+
+      <div>
+        <img src={look1} alt='testimonial'/>
+        <div className="myCarousel">
+          <h3>Charles</h3>
+          <h4>Lagos</h4>
+          <p>
+            Outstanding and perfect. They give you peace of mind and value for money spent.
+            </p>
+        </div>
+      </div>
+    </Carousel>
   );
 }
-
-export default Testimonial;

@@ -23,18 +23,18 @@ export default function PrivatePartyTab() {
     let image;
     switch (index) {
     case '1':
-         title = "Private Events";
-         info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- private events';
+         title = "Christening";
+         info = 'Hello there, welcome to Eight Beryl. Christening content';
          image = look4;
         break;
     case '2':
-        title = " Bar Mitzvahs";
-        info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- bar mitzvahs';
+        title = "Birthday";
+        info = 'Hello there, welcome to Eight Beryl.  -- Birthday content';
         image = look2;
         break;
     case '3':
-        title = "Christening";
-        info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- christening';
+        title = "Bridal Shower";
+        info = 'Hello there, welcome to Eight Beryl.  -- Bridal Shower content';
         image = look3;
         break;
     default:
@@ -45,7 +45,7 @@ export default function PrivatePartyTab() {
 
     return (
         <div>
-            <MDBContainer>
+            <MDBContainer className='package-background-three'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -63,7 +63,7 @@ export default function PrivatePartyTab() {
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Private Events</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Christening</h4>
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'></MDBCol>
@@ -81,7 +81,7 @@ export default function PrivatePartyTab() {
 
             </MDBContainer>
 
-            <MDBContainer>
+            <MDBContainer className='package-background-two'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -99,11 +99,11 @@ export default function PrivatePartyTab() {
                             />
                         </MDBCol>
 
-                        <MDBCol md="3" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Bar Mitzvahs</h4>
+                        <MDBCol md="2" className='mx-auto text-center'>
+                            <h4 className='title h4-responsive font-weight-bold'>Birthday </h4>
                         </MDBCol>
 
-                        <MDBCol md="1" className='mx-auto text-center'></MDBCol>
+                        <MDBCol md="2" className='mx-auto text-center'></MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
                             <p>1 hr</p>
@@ -119,7 +119,7 @@ export default function PrivatePartyTab() {
             </MDBContainer>
 
 
-            <MDBContainer>
+            <MDBContainer className='package-background-one'> 
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -138,7 +138,7 @@ export default function PrivatePartyTab() {
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Christening</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Bridal Shower</h4>
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'></MDBCol>

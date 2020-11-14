@@ -23,18 +23,18 @@ export default function CorporateEventTab() {
     let image;
     switch (index) {
         case '1':
-            title = "Employee fun days";
-            info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- employee fun days';
+            title = "Conferences";
+            info = 'Hello there, welcome to Eight Beryl. Confernece content';
             image = look4;
             break;
         case '2':
-            title = "Corporate parties";
-            info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- corporate parties';
+            title = "Product/Company Launch";
+            info = 'Hello there, welcome to Eight Beryl. Launch content';
             image = look2;
             break;
         case '3':
-            title = "Conferences";
-            info = 'Hello there, welcome to Eight Beryl. I am trying to test something -- conferences';
+            title = "Employee fun day/End of the year party";
+            info = 'Hello there, welcome to Eight Beryl. Party content';
             image = look3;
             break;
         default:
@@ -46,7 +46,7 @@ export default function CorporateEventTab() {
 
     return (
         <div>
-            <MDBContainer>
+            <MDBContainer className='package-background-one'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -64,7 +64,7 @@ export default function CorporateEventTab() {
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Employee fun days</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Conferences</h4>
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'></MDBCol>
@@ -84,7 +84,7 @@ export default function CorporateEventTab() {
 
 
 
-            <MDBContainer>
+            <MDBContainer className='package-background-two'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -103,7 +103,7 @@ export default function CorporateEventTab() {
                         </MDBCol>
 
                         <MDBCol md="3" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Corporate Parties</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Product/Company Launch</h4>
                         </MDBCol>
 
                         <MDBCol md="1" className='mx-auto text-center'></MDBCol>
@@ -122,7 +122,7 @@ export default function CorporateEventTab() {
             </MDBContainer>
 
 
-            <MDBContainer>
+            <MDBContainer className='package-background-three'>
                 <hr className='mt-5' style={{ backgroundColor: '#f7c761' }} />
                 <MDBAnimation
                     reveal
@@ -141,7 +141,7 @@ export default function CorporateEventTab() {
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'>
-                            <h4 className='title h4-responsive font-weight-bold'>Conferences</h4>
+                            <h4 className='title h4-responsive font-weight-bold'>Fun days/End of the year party</h4>
                         </MDBCol>
 
                         <MDBCol md="2" className='mx-auto text-center'></MDBCol>
